@@ -1,13 +1,17 @@
 
+/.vscode/
+
+/bin/
+/build/
+
 note01/
 
 dot/
 
-Project/build/
-Project/.vscode/
-Project/bin/
-Project/test/
-Project/dot/
+/test/
+/dot/
 
-Project/mat/
-Project/data/
+/mat/
+/data/
+
+/third_party/

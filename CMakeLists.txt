@@ -1,5 +1,5 @@
 
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.10)
 project(hako
     VERSION 0.0.1
     DESCRIPTION "???"
@@ -10,6 +10,8 @@ project(hako
 
 # 设置C++标准
 set(CMAKE_CXX_STANDARD 17)
+
+# 设置build文件夹路径
 
 # 设置生成的可执行文件的输出路径为bin目录
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
@@ -27,8 +29,16 @@ add_executable(${PROJECT_NAME} ${SRC_FILES})
 # 添加头文件
 include_directories(./include)
 
+# 添加第三方库路径
+include_directories(./third_party)
+
+# 添加第三方库
+link_directories(./third_party)
+
+set(EASYX_PATH "${CMAKE_SOURCE_DIR}/third_party/libeasyx.a")
+
 # 添加链接库
-target_link_libraries(${PROJECT_NAME} easyx)
+target_link_libraries(${PROJECT_NAME} ${EASYX_PATH})
 
 # # 链接到 EasyX 图形库
 # include_directories(./easyx)
