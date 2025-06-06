@@ -5,10 +5,10 @@
 
 std::string path_1_ = "!C:/Users/apple/Documents/Pro++/KU/pictures/Map/map - 1.png";
 std::string path_2_ = "C:/Users/apple/Documents/Pro++/KU/pictures/ika.png";
-std::string path_3_ = ROOT_PATH "/mat/ika - a.png";
-std::string path_4_     = ROOT_PATH "/mat/ika - b.png";
-std::string data_path_1 = ROOT_PATH "/data/Player.txt";
-std::string data_path_2 = ROOT_PATH "/data/Map - 1.txt";
+std::string path_3_ =  "./mat/ika - a.png";
+std::string path_4_     =  "./mat/ika - b.png";
+std::string data_path_1 =  "./data/Player.txt";
+std::string data_path_2 =  "./data/Map - 1.txt";
 
 std::array<IMAGE, 2> loadIKA()
 {
